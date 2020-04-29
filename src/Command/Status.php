@@ -97,7 +97,7 @@ class Status extends Command {
                 strtolower($this->idoitInfo['type']),
                 $this->idoitInfo['version']
             )
-            ->info('Tenant: <strong>%s</strong>', $this->idoitInfo['login']['mandator'])
+            ->info('Tenant: <strong>%s</strong>', $this->idoitInfo['login']['tenant'])
             ->info(
                 'Link: <strong>%s</strong>',
                 str_replace('src/jsonrpc.php', '', $this->config['api']['url'])
